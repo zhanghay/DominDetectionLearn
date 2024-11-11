@@ -137,3 +137,8 @@ wandb
 # checkpoints
 # checkpoints_sfda
 *.pth
+
+# data
+data/VisDA/test/*
+data/VisDA/train/*
+data/VisDA/validation/*
