@@ -1,0 +1,96 @@
+2024-11-11 13:01:28,405 [DEBUG] - 
+==========================================
+pythontrain_source.py --backbone_arch resnet50 --dataset VisDA --s_idx 0 --target_label_type OPDA --epochs 10 --lr 0.001
+dataset:VisDA
+backbone_arch:resnet50
+embed_feat_dim:256
+s_idx:0
+t_idx:1
+checkpoint:None
+epochs:10
+lr:0.001
+gpu:0
+num_workers:6
+batch_size:64
+weight_decay:0.001
+test:False
+seed:2021
+lam_psd:0.3
+w_0:0.55
+source_train_type:smooth
+target_label_type:OPDA
+target_private_class_num:3
+note:None
+source_data_dir:./data/VisDA/train/
+target_data_dir:./data/VisDA/validation/
+target_domain_list:['validataion']
+target_domain_dir_list:['./data/VisDA/validation/']
+shared_class_num:6
+source_private_class_num:3
+source_class_num:9
+target_class_num:9
+class_num:9
+source_class_list:[0, 1, 2, 3, 4, 5, 6, 7, 8]
+target_class_list:[0, 1, 2, 3, 4, 5, 9]
+save_dir:./checkpoints/VisDA/source_0/source_smooth_OPDA
+==========================================
+
+2024-11-11 13:01:28,757 [INFO] - 
+=================================================
+    START TRAINING ON THE SOURCE:0 == OPDA         
+=================================================
+2024-11-11 13:06:36,254 [INFO] - Epoch:0/10 train_loss:0.608
+2024-11-11 13:08:54,909 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:0.992, UnknownAcc:0.000
+2024-11-11 13:08:54,910 [INFO] - VISDA PER_CLS_ACC:
+2024-11-11 13:08:54,910 [INFO] - [0.99902118 0.99076087 0.99200385 0.96631233 0.99558406 0.99459042
+ 0.99158695 0.99736755 0.99916099]
+2024-11-11 13:14:05,419 [INFO] - Epoch:1/10 train_loss:0.550
+2024-11-11 13:16:24,941 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:0.995, UnknownAcc:0.000
+2024-11-11 13:16:24,941 [INFO] - VISDA PER_CLS_ACC:
+2024-11-11 13:16:24,941 [INFO] - [0.99972022 0.99592613 0.99404869 0.98194748 0.99768591 0.9967683
+ 0.99291148 0.99777942 0.99981357]
+2024-11-11 13:21:34,911 [INFO] - Epoch:2/10 train_loss:0.540
+2024-11-11 13:23:52,263 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:0.996, UnknownAcc:0.000
+2024-11-11 13:23:52,264 [INFO] - VISDA PER_CLS_ACC:
+2024-11-11 13:23:52,264 [INFO] - [0.99923077 0.99551935 0.99579302 0.98616539 0.99757997 0.99803302
+ 0.99590896 0.99876584 0.99981354]
+2024-11-11 13:29:03,219 [INFO] - Epoch:3/10 train_loss:0.534
+2024-11-11 13:31:20,069 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:0.997, UnknownAcc:0.000
+2024-11-11 13:31:20,069 [INFO] - VISDA PER_CLS_ACC:
+2024-11-11 13:31:20,069 [INFO] - [0.99979027 0.99443162 0.99500962 0.99077837 0.99894825 0.99831401
+ 0.99752218 0.99876574 0.99972033]
+2024-11-11 13:36:31,994 [INFO] - Epoch:4/10 train_loss:0.531
+2024-11-11 13:38:49,956 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:0.997, UnknownAcc:0.000
+2024-11-11 13:38:49,957 [INFO] - VISDA PER_CLS_ACC:
+2024-11-11 13:38:49,957 [INFO] - [0.99986018 0.99660557 0.99837701 0.98765239 0.99905343 0.99838404
+ 0.99706069 0.99967081 0.99981357]
+2024-11-11 13:44:00,669 [INFO] - Epoch:5/10 train_loss:0.529
+2024-11-11 13:46:18,745 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:0.998, UnknownAcc:0.000
+2024-11-11 13:46:18,746 [INFO] - VISDA PER_CLS_ACC:
+2024-11-11 13:46:18,746 [INFO] - [0.99972032 0.99619565 0.99711486 0.99242069 0.99926378 0.99915695
+ 0.99786743 0.99967097 0.99990677]
+2024-11-11 13:51:28,079 [INFO] - Epoch:6/10 train_loss:0.527
+2024-11-11 13:53:46,522 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:0.998, UnknownAcc:0.000
+2024-11-11 13:53:46,523 [INFO] - VISDA PER_CLS_ACC:
+2024-11-11 13:53:46,523 [INFO] - [0.99986019 0.99646835 0.99921847 0.99054392 0.99947402 0.99880593
+ 0.99798294 0.99967084 0.99990679]
+2024-11-11 13:58:58,417 [INFO] - Epoch:7/10 train_loss:0.525
+2024-11-11 14:01:15,422 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:0.998, UnknownAcc:0.000
+2024-11-11 14:01:15,423 [INFO] - VISDA PER_CLS_ACC:
+2024-11-11 14:01:15,423 [INFO] - [0.99986016 0.99714751 0.99843703 0.99335626 0.99926378 0.99950815
+ 0.99781068 0.99967097 1.        ]
+2024-11-11 14:06:25,009 [INFO] - Epoch:8/10 train_loss:0.524
+2024-11-11 14:08:41,605 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:0.999, UnknownAcc:0.000
+2024-11-11 14:08:41,605 [INFO] - VISDA PER_CLS_ACC:
+2024-11-11 14:08:41,605 [INFO] - [0.99965047 0.99674046 0.99783576 0.99515246 0.99968434 0.99971906
+ 0.99838654 0.99950646 1.        ]
+2024-11-11 14:13:52,638 [INFO] - Epoch:9/10 train_loss:0.522
+2024-11-11 14:16:10,771 [INFO] - EVALUATE ON SOURCE: H-Score:0.000, KnownAcc:0.999, UnknownAcc:0.000
+2024-11-11 14:16:10,771 [INFO] - VISDA PER_CLS_ACC:
+2024-11-11 14:16:10,771 [INFO] - [0.9997903  0.99701249 0.99879728 0.99413879 0.99947413 0.99971896
+ 0.99844407 0.99967092 0.99990679]
+2024-11-11 14:16:10,980 [INFO] - 
+=================================================
+        EVALUATE ON THE TARGET:validataion                  
+=================================================
+2024-11-11 14:16:58,620 [INFO] - H-Score:0.257, KnownAcc:0.154, UnknownACC:0.779

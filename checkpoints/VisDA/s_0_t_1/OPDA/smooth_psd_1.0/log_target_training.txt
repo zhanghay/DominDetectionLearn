@@ -1,0 +1,348 @@
+2024-11-11 17:16:47,258 [DEBUG] - 
+==========================================
+pythontrain_target.py --backbone_arch resnet50 --lr 0.0001 --dataset VisDA --lam_psd 1.00 --target_label_type OPDA --epochs 30
+dataset:VisDA
+backbone_arch:resnet50
+embed_feat_dim:256
+s_idx:0
+t_idx:1
+checkpoint:checkpoints/VisDA/source_0/source_smooth_OPDA/latest_source_checkpoint.pth
+epochs:30
+lr:0.0001
+gpu:0
+num_workers:6
+batch_size:64
+weight_decay:0.001
+test:False
+seed:2021
+lam_psd:1.0
+w_0:0.55
+source_train_type:smooth
+target_label_type:OPDA
+target_private_class_num:3
+note:None
+source_data_dir:./data/VisDA/train/
+target_data_dir:./data/VisDA/validation/
+target_domain_list:['validataion']
+target_domain_dir_list:['./data/VisDA/validation/']
+shared_class_num:6
+source_private_class_num:3
+source_class_num:9
+target_class_num:9
+class_num:9
+source_class_list:[0, 1, 2, 3, 4, 5, 6, 7, 8]
+target_class_list:[0, 1, 2, 3, 4, 5, 9]
+reset:False
+save_dir:./checkpoints/VisDA/s_0_t_1/OPDA/smooth_psd_1.0
+==========================================
+
+2024-11-11 17:16:47,460 [INFO] - 
+=======================================================
+   START TRAINING ON THE TARGET:1 BASED ON SOURCE:0  
+=======================================================
+2024-11-11 17:16:47,463 [INFO] - Generating offline feat_decomposation based pseudo labels...
+2024-11-11 17:17:36,185 [INFO] - Performing C_t estimation...
+2024-11-11 17:18:32,176 [INFO] - Performing C_t estimation Done!
+2024-11-11 17:18:33,270 [INFO] - PSD AVG ACC:	0.383
+2024-11-11 17:18:33,271 [INFO] - PSD PER ACC:	0.487	0.122	0.448	0.420	0.441	0.222	0.543
+2024-11-11 17:18:33,271 [INFO] - PER CLS NUM:	3646	3475	4690	10401	4691	2075	12065
+2024-11-11 17:18:33,271 [INFO] - PRE CLS NUM:	1840	455	4737	6347	2174	1061	19839
+2024-11-11 17:18:33,271 [INFO] - PRE ACC NUM:	1774	423	2099	4366	2070	461	6554
+2024-11-11 17:20:22,452 [INFO] - Epoch: 1/30,          train_all_loss:2.391,
+                          train_psd_loss:0.565, train_reg_loss:0.259, train_con_loss:1.567,
+2024-11-11 17:21:09,936 [INFO] - Current: H-Score:0.446, KnownAcc:0.308, UnknownAcc:0.808
+2024-11-11 17:21:09,936 [INFO] - Best   : H-Score:0.446, KnownAcc:0.308, UnknownAcc:0.808
+2024-11-11 17:21:09,939 [INFO] - Generating offline feat_decomposation based pseudo labels...
+2024-11-11 17:21:57,079 [INFO] - PSD AVG ACC:	0.474
+2024-11-11 17:21:57,079 [INFO] - PSD PER ACC:	0.659	0.434	0.401	0.275	0.528	0.287	0.736
+2024-11-11 17:21:57,079 [INFO] - PER CLS NUM:	3646	3475	4690	10401	4691	2075	12065
+2024-11-11 17:21:57,079 [INFO] - PRE CLS NUM:	2434	1543	3264	3501	2511	1731	22996
+2024-11-11 17:21:57,079 [INFO] - PRE ACC NUM:	2404	1508	1883	2857	2477	595	8875
+2024-11-11 17:23:47,750 [INFO] - Epoch: 2/30,          train_all_loss:2.615,
+                          train_psd_loss:0.863, train_reg_loss:0.338, train_con_loss:1.414,
+2024-11-11 17:24:35,193 [INFO] - Current: H-Score:0.534, KnownAcc:0.396, UnknownAcc:0.816
+2024-11-11 17:24:35,193 [INFO] - Best   : H-Score:0.534, KnownAcc:0.396, UnknownAcc:0.816
+2024-11-11 17:24:35,195 [INFO] - Generating offline feat_decomposation based pseudo labels...
+2024-11-11 17:25:23,342 [INFO] - PSD AVG ACC:	0.501
+2024-11-11 17:25:23,342 [INFO] - PSD PER ACC:	0.657	0.502	0.434	0.296	0.538	0.305	0.774
+2024-11-11 17:25:23,342 [INFO] - PER CLS NUM:	3646	3475	4690	10401	4691	2075	12065
+2024-11-11 17:25:23,342 [INFO] - PRE CLS NUM:	2407	1778	3144	3702	2559	1673	23278
+2024-11-11 17:25:23,342 [INFO] - PRE ACC NUM:	2395	1744	2036	3078	2523	632	9337
+2024-11-11 17:27:14,651 [INFO] - Epoch: 3/30,          train_all_loss:2.581,
+                          train_psd_loss:0.881, train_reg_loss:0.347, train_con_loss:1.352,
+2024-11-11 17:28:02,071 [INFO] - Current: H-Score:0.589, KnownAcc:0.447, UnknownAcc:0.861
+2024-11-11 17:28:02,072 [INFO] - Best   : H-Score:0.589, KnownAcc:0.447, UnknownAcc:0.861
+2024-11-11 17:28:02,073 [INFO] - Generating offline feat_decomposation based pseudo labels...
+2024-11-11 17:28:49,929 [INFO] - PSD AVG ACC:	0.528
+2024-11-11 17:28:49,930 [INFO] - PSD PER ACC:	0.672	0.611	0.433	0.289	0.557	0.332	0.801
+2024-11-11 17:28:49,930 [INFO] - PER CLS NUM:	3646	3475	4690	10401	4691	2075	12065
+2024-11-11 17:28:49,930 [INFO] - PRE CLS NUM:	2459	2181	2800	3552	2650	1757	23293
+2024-11-11 17:28:49,930 [INFO] - PRE ACC NUM:	2451	2122	2031	3004	2613	688	9666
+2024-11-11 17:30:41,134 [INFO] - Epoch: 4/30,          train_all_loss:2.574,
+                          train_psd_loss:0.900, train_reg_loss:0.360, train_con_loss:1.315,
+2024-11-11 17:31:29,366 [INFO] - Current: H-Score:0.614, KnownAcc:0.472, UnknownAcc:0.879
+2024-11-11 17:31:29,366 [INFO] - Best   : H-Score:0.614, KnownAcc:0.472, UnknownAcc:0.879
+2024-11-11 17:31:29,368 [INFO] - Generating offline feat_decomposation based pseudo labels...
+2024-11-11 17:32:17,054 [INFO] - PSD AVG ACC:	0.539
+2024-11-11 17:32:17,054 [INFO] - PSD PER ACC:	0.677	0.619	0.454	0.293	0.556	0.360	0.815
+2024-11-11 17:32:17,054 [INFO] - PER CLS NUM:	3646	3475	4690	10401	4691	2075	12065
+2024-11-11 17:32:17,055 [INFO] - PRE CLS NUM:	2474	2207	2720	3580	2643	1861	23301
+2024-11-11 17:32:17,055 [INFO] - PRE ACC NUM:	2469	2151	2128	3052	2608	747	9832
+2024-11-11 17:34:07,951 [INFO] - Epoch: 5/30,          train_all_loss:2.551,
+                          train_psd_loss:0.901, train_reg_loss:0.364, train_con_loss:1.285,
+2024-11-11 17:34:55,298 [INFO] - Current: H-Score:0.634, KnownAcc:0.492, UnknownAcc:0.891
+2024-11-11 17:34:55,298 [INFO] - Best   : H-Score:0.634, KnownAcc:0.492, UnknownAcc:0.891
+2024-11-11 17:34:55,300 [INFO] - Generating offline feat_decomposation based pseudo labels...
+2024-11-11 17:35:43,529 [INFO] - PSD AVG ACC:	0.553
+2024-11-11 17:35:43,529 [INFO] - PSD PER ACC:	0.687	0.623	0.468	0.287	0.565	0.411	0.828
+2024-11-11 17:35:43,529 [INFO] - PER CLS NUM:	3646	3475	4690	10401	4691	2075	12065
+2024-11-11 17:35:43,529 [INFO] - PRE CLS NUM:	2509	2224	2662	3474	2685	1979	23302
+2024-11-11 17:35:43,530 [INFO] - PRE ACC NUM:	2505	2166	2193	2987	2649	852	9986
+2024-11-11 17:37:34,890 [INFO] - Epoch: 6/30,          train_all_loss:2.555,
+                          train_psd_loss:0.912, train_reg_loss:0.369, train_con_loss:1.273,
+2024-11-11 17:38:23,033 [INFO] - Current: H-Score:0.650, KnownAcc:0.508, UnknownAcc:0.901
+2024-11-11 17:38:23,033 [INFO] - Best   : H-Score:0.650, KnownAcc:0.508, UnknownAcc:0.901
+2024-11-11 17:38:23,037 [INFO] - Generating offline feat_decomposation based pseudo labels...
+2024-11-11 17:39:11,276 [INFO] - PSD AVG ACC:	0.562
+2024-11-11 17:39:11,276 [INFO] - PSD PER ACC:	0.692	0.618	0.476	0.283	0.577	0.450	0.840
+2024-11-11 17:39:11,277 [INFO] - PER CLS NUM:	3646	3475	4690	10401	4691	2075	12065
+2024-11-11 17:39:11,277 [INFO] - PRE CLS NUM:	2528	2203	2597	3385	2744	2079	23394
+2024-11-11 17:39:11,277 [INFO] - PRE ACC NUM:	2524	2147	2231	2940	2706	933	10137
+2024-11-11 17:41:03,727 [INFO] - Epoch: 7/30,          train_all_loss:2.554,
+                          train_psd_loss:0.921, train_reg_loss:0.374, train_con_loss:1.260,
+2024-11-11 17:41:51,879 [INFO] - Current: H-Score:0.663, KnownAcc:0.523, UnknownAcc:0.907
+2024-11-11 17:41:51,879 [INFO] - Best   : H-Score:0.663, KnownAcc:0.523, UnknownAcc:0.907
+2024-11-11 17:41:51,882 [INFO] - Generating offline feat_decomposation based pseudo labels...
+2024-11-11 17:42:39,868 [INFO] - PSD AVG ACC:	0.570
+2024-11-11 17:42:39,869 [INFO] - PSD PER ACC:	0.683	0.641	0.464	0.290	0.578	0.486	0.847
+2024-11-11 17:42:39,869 [INFO] - PER CLS NUM:	3646	3475	4690	10401	4691	2075	12065
+2024-11-11 17:42:39,869 [INFO] - PRE CLS NUM:	2494	2294	2438	3465	2749	2139	23322
+2024-11-11 17:42:39,869 [INFO] - PRE ACC NUM:	2491	2228	2175	3018	2710	1008	10216
+2024-11-11 17:44:32,616 [INFO] - Epoch: 8/30,          train_all_loss:2.549,
+                          train_psd_loss:0.922, train_reg_loss:0.378, train_con_loss:1.249,
+2024-11-11 17:45:20,271 [INFO] - Current: H-Score:0.671, KnownAcc:0.531, UnknownAcc:0.911
+2024-11-11 17:45:20,271 [INFO] - Best   : H-Score:0.671, KnownAcc:0.531, UnknownAcc:0.911
+2024-11-11 17:45:20,272 [INFO] - Generating offline feat_decomposation based pseudo labels...
+2024-11-11 17:46:09,394 [INFO] - PSD AVG ACC:	0.574
+2024-11-11 17:46:09,394 [INFO] - PSD PER ACC:	0.681	0.646	0.479	0.284	0.562	0.522	0.848
+2024-11-11 17:46:09,394 [INFO] - PER CLS NUM:	3646	3475	4690	10401	4691	2075	12065
+2024-11-11 17:46:09,394 [INFO] - PRE CLS NUM:	2487	2311	2478	3373	2666	2219	23441
+2024-11-11 17:46:09,394 [INFO] - PRE ACC NUM:	2484	2244	2245	2949	2634	1084	10230
+2024-11-11 17:48:02,249 [INFO] - Epoch: 9/30,          train_all_loss:2.541,
+                          train_psd_loss:0.922, train_reg_loss:0.376, train_con_loss:1.242,
+2024-11-11 17:48:49,910 [INFO] - Current: H-Score:0.686, KnownAcc:0.550, UnknownAcc:0.911
+2024-11-11 17:48:49,910 [INFO] - Best   : H-Score:0.686, KnownAcc:0.550, UnknownAcc:0.911
+2024-11-11 17:48:49,912 [INFO] - Generating offline feat_decomposation based pseudo labels...
+2024-11-11 17:49:37,944 [INFO] - PSD AVG ACC:	0.579
+2024-11-11 17:49:37,945 [INFO] - PSD PER ACC:	0.692	0.634	0.475	0.277	0.576	0.560	0.842
+2024-11-11 17:49:37,945 [INFO] - PER CLS NUM:	3646	3475	4690	10401	4691	2075	12065
+2024-11-11 17:49:37,945 [INFO] - PRE CLS NUM:	2525	2265	2408	3294	2737	2306	23379
+2024-11-11 17:49:37,945 [INFO] - PRE ACC NUM:	2522	2203	2226	2883	2700	1162	10154
+2024-11-11 17:51:31,317 [INFO] - Epoch: 10/30,          train_all_loss:2.514,
+                          train_psd_loss:0.905, train_reg_loss:0.375, train_con_loss:1.234,
+2024-11-11 17:52:19,499 [INFO] - Current: H-Score:0.693, KnownAcc:0.555, UnknownAcc:0.921
+2024-11-11 17:52:19,499 [INFO] - Best   : H-Score:0.693, KnownAcc:0.555, UnknownAcc:0.921
+2024-11-11 17:52:19,502 [INFO] - Generating offline feat_decomposation based pseudo labels...
+2024-11-11 17:53:07,197 [INFO] - Performing C_t estimation...
+2024-11-11 17:54:05,402 [INFO] - Performing C_t estimation Done!
+2024-11-11 17:54:05,534 [INFO] - PSD AVG ACC:	0.622
+2024-11-11 17:54:05,534 [INFO] - PSD PER ACC:	0.763	0.685	0.516	0.298	0.631	0.652	0.810
+2024-11-11 17:54:05,534 [INFO] - PER CLS NUM:	3646	3475	4690	10401	4691	2075	12065
+2024-11-11 17:54:05,534 [INFO] - PRE CLS NUM:	2790	2468	2691	3565	3009	2738	21584
+2024-11-11 17:54:05,534 [INFO] - PRE ACC NUM:	2783	2382	2422	3103	2961	1353	9777
+2024-11-11 17:55:57,621 [INFO] - Epoch: 11/30,          train_all_loss:2.379,
+                          train_psd_loss:0.775, train_reg_loss:0.385, train_con_loss:1.219,
+2024-11-11 17:56:44,786 [INFO] - Current: H-Score:0.717, KnownAcc:0.592, UnknownAcc:0.909
+2024-11-11 17:56:44,786 [INFO] - Best   : H-Score:0.717, KnownAcc:0.592, UnknownAcc:0.909
+2024-11-11 17:56:44,789 [INFO] - Generating offline feat_decomposation based pseudo labels...
+2024-11-11 17:57:32,799 [INFO] - PSD AVG ACC:	0.628
+2024-11-11 17:57:32,800 [INFO] - PSD PER ACC:	0.752	0.704	0.518	0.303	0.645	0.673	0.800
+2024-11-11 17:57:32,800 [INFO] - PER CLS NUM:	3646	3475	4690	10401	4691	2075	12065
+2024-11-11 17:57:32,800 [INFO] - PRE CLS NUM:	2746	2542	2707	3613	3074	2766	21305
+2024-11-11 17:57:32,800 [INFO] - PRE ACC NUM:	2741	2447	2428	3152	3025	1397	9658
+2024-11-11 17:59:25,632 [INFO] - Epoch: 12/30,          train_all_loss:2.369,
+                          train_psd_loss:0.789, train_reg_loss:0.393, train_con_loss:1.187,
+2024-11-11 18:00:13,340 [INFO] - Current: H-Score:0.727, KnownAcc:0.611, UnknownAcc:0.900
+2024-11-11 18:00:13,340 [INFO] - Best   : H-Score:0.727, KnownAcc:0.611, UnknownAcc:0.900
+2024-11-11 18:00:13,343 [INFO] - Generating offline feat_decomposation based pseudo labels...
+2024-11-11 18:01:00,567 [INFO] - PSD AVG ACC:	0.631
+2024-11-11 18:01:00,567 [INFO] - PSD PER ACC:	0.747	0.709	0.512	0.320	0.647	0.699	0.786
+2024-11-11 18:01:00,568 [INFO] - PER CLS NUM:	3646	3475	4690	10401	4691	2075	12065
+2024-11-11 18:01:00,568 [INFO] - PRE CLS NUM:	2727	2560	2633	3835	3080	2815	20856
+2024-11-11 18:01:00,568 [INFO] - PRE ACC NUM:	2722	2464	2400	3331	3033	1451	9480
+2024-11-11 18:02:53,761 [INFO] - Epoch: 13/30,          train_all_loss:2.349,
+                          train_psd_loss:0.790, train_reg_loss:0.399, train_con_loss:1.160,
+2024-11-11 18:03:42,539 [INFO] - Current: H-Score:0.738, KnownAcc:0.633, UnknownAcc:0.884
+2024-11-11 18:03:42,539 [INFO] - Best   : H-Score:0.738, KnownAcc:0.633, UnknownAcc:0.884
+2024-11-11 18:03:42,541 [INFO] - Generating offline feat_decomposation based pseudo labels...
+2024-11-11 18:04:30,708 [INFO] - PSD AVG ACC:	0.633
+2024-11-11 18:04:30,708 [INFO] - PSD PER ACC:	0.741	0.714	0.529	0.324	0.630	0.720	0.773
+2024-11-11 18:04:30,709 [INFO] - PER CLS NUM:	3646	3475	4690	10401	4691	2075	12065
+2024-11-11 18:04:30,709 [INFO] - PRE CLS NUM:	2708	2579	2739	3873	2995	2883	20657
+2024-11-11 18:04:30,709 [INFO] - PRE ACC NUM:	2703	2482	2479	3373	2954	1495	9325
+2024-11-11 18:06:23,975 [INFO] - Epoch: 14/30,          train_all_loss:2.346,
+                          train_psd_loss:0.809, train_reg_loss:0.406, train_con_loss:1.131,
+2024-11-11 18:07:12,318 [INFO] - Current: H-Score:0.745, KnownAcc:0.643, UnknownAcc:0.886
+2024-11-11 18:07:12,318 [INFO] - Best   : H-Score:0.745, KnownAcc:0.643, UnknownAcc:0.886
+2024-11-11 18:07:12,319 [INFO] - Generating offline feat_decomposation based pseudo labels...
+2024-11-11 18:08:01,123 [INFO] - PSD AVG ACC:	0.635
+2024-11-11 18:08:01,123 [INFO] - PSD PER ACC:	0.749	0.706	0.526	0.314	0.629	0.755	0.763
+2024-11-11 18:08:01,123 [INFO] - PER CLS NUM:	3646	3475	4690	10401	4691	2075	12065
+2024-11-11 18:08:01,123 [INFO] - PRE CLS NUM:	2737	2542	2727	3738	2991	2973	20630
+2024-11-11 18:08:01,123 [INFO] - PRE ACC NUM:	2732	2453	2468	3263	2952	1567	9210
+2024-11-11 18:09:54,021 [INFO] - Epoch: 15/30,          train_all_loss:2.340,
+                          train_psd_loss:0.819, train_reg_loss:0.408, train_con_loss:1.113,
+2024-11-11 18:10:42,058 [INFO] - Current: H-Score:0.753, KnownAcc:0.659, UnknownAcc:0.878
+2024-11-11 18:10:42,058 [INFO] - Best   : H-Score:0.753, KnownAcc:0.659, UnknownAcc:0.878
+2024-11-11 18:10:42,061 [INFO] - Generating offline feat_decomposation based pseudo labels...
+2024-11-11 18:11:29,732 [INFO] - PSD AVG ACC:	0.639
+2024-11-11 18:11:29,733 [INFO] - PSD PER ACC:	0.768	0.717	0.521	0.317	0.625	0.772	0.752
+2024-11-11 18:11:29,733 [INFO] - PER CLS NUM:	3646	3475	4690	10401	4691	2075	12065
+2024-11-11 18:11:29,733 [INFO] - PRE CLS NUM:	2808	2588	2693	3786	2971	2961	20331
+2024-11-11 18:11:29,733 [INFO] - PRE ACC NUM:	2801	2491	2445	3294	2931	1601	9071
+2024-11-11 18:13:22,893 [INFO] - Epoch: 16/30,          train_all_loss:2.327,
+                          train_psd_loss:0.819, train_reg_loss:0.413, train_con_loss:1.094,
+2024-11-11 18:14:10,738 [INFO] - Current: H-Score:0.759, KnownAcc:0.667, UnknownAcc:0.881
+2024-11-11 18:14:10,739 [INFO] - Best   : H-Score:0.759, KnownAcc:0.667, UnknownAcc:0.881
+2024-11-11 18:14:10,741 [INFO] - Generating offline feat_decomposation based pseudo labels...
+2024-11-11 18:14:59,140 [INFO] - PSD AVG ACC:	0.641
+2024-11-11 18:14:59,140 [INFO] - PSD PER ACC:	0.763	0.709	0.516	0.305	0.657	0.787	0.750
+2024-11-11 18:14:59,140 [INFO] - PER CLS NUM:	3646	3475	4690	10401	4691	2075	12065
+2024-11-11 18:14:59,140 [INFO] - PRE CLS NUM:	2787	2559	2661	3641	3131	2983	20368
+2024-11-11 18:14:59,140 [INFO] - PRE ACC NUM:	2782	2464	2422	3175	3080	1634	9044
+2024-11-11 18:16:52,112 [INFO] - Epoch: 17/30,          train_all_loss:2.319,
+                          train_psd_loss:0.823, train_reg_loss:0.414, train_con_loss:1.081,
+2024-11-11 18:17:39,570 [INFO] - Current: H-Score:0.758, KnownAcc:0.667, UnknownAcc:0.878
+2024-11-11 18:17:39,571 [INFO] - Best   : H-Score:0.759, KnownAcc:0.667, UnknownAcc:0.881
+2024-11-11 18:17:39,573 [INFO] - Generating offline feat_decomposation based pseudo labels...
+2024-11-11 18:18:27,420 [INFO] - PSD AVG ACC:	0.638
+2024-11-11 18:18:27,420 [INFO] - PSD PER ACC:	0.748	0.704	0.516	0.315	0.650	0.791	0.742
+2024-11-11 18:18:27,420 [INFO] - PER CLS NUM:	3646	3475	4690	10401	4691	2075	12065
+2024-11-11 18:18:27,420 [INFO] - PRE CLS NUM:	2734	2536	2643	3760	3100	2995	20190
+2024-11-11 18:18:27,420 [INFO] - PRE ACC NUM:	2729	2446	2420	3277	3051	1642	8954
+2024-11-11 18:20:20,779 [INFO] - Epoch: 18/30,          train_all_loss:2.313,
+                          train_psd_loss:0.822, train_reg_loss:0.416, train_con_loss:1.074,
+2024-11-11 18:21:08,511 [INFO] - Current: H-Score:0.759, KnownAcc:0.671, UnknownAcc:0.875
+2024-11-11 18:21:08,512 [INFO] - Best   : H-Score:0.759, KnownAcc:0.671, UnknownAcc:0.875
+2024-11-11 18:21:08,513 [INFO] - Generating offline feat_decomposation based pseudo labels...
+2024-11-11 18:21:55,877 [INFO] - PSD AVG ACC:	0.638
+2024-11-11 18:21:55,877 [INFO] - PSD PER ACC:	0.736	0.720	0.515	0.312	0.636	0.807	0.739
+2024-11-11 18:21:55,877 [INFO] - PER CLS NUM:	3646	3475	4690	10401	4691	2075	12065
+2024-11-11 18:21:55,877 [INFO] - PRE CLS NUM:	2690	2605	2640	3714	3026	3046	20152
+2024-11-11 18:21:55,877 [INFO] - PRE ACC NUM:	2685	2502	2415	3241	2983	1675	8911
+2024-11-11 18:23:49,088 [INFO] - Epoch: 19/30,          train_all_loss:2.306,
+                          train_psd_loss:0.828, train_reg_loss:0.418, train_con_loss:1.060,
+2024-11-11 18:24:35,892 [INFO] - Current: H-Score:0.765, KnownAcc:0.681, UnknownAcc:0.874
+2024-11-11 18:24:35,892 [INFO] - Best   : H-Score:0.765, KnownAcc:0.681, UnknownAcc:0.874
+2024-11-11 18:24:35,895 [INFO] - Generating offline feat_decomposation based pseudo labels...
+2024-11-11 18:25:22,984 [INFO] - PSD AVG ACC:	0.641
+2024-11-11 18:25:22,984 [INFO] - PSD PER ACC:	0.759	0.719	0.510	0.310	0.642	0.813	0.732
+2024-11-11 18:25:22,985 [INFO] - PER CLS NUM:	3646	3475	4690	10401	4691	2075	12065
+2024-11-11 18:25:22,985 [INFO] - PRE CLS NUM:	2774	2599	2606	3693	3054	3002	20077
+2024-11-11 18:25:22,985 [INFO] - PRE ACC NUM:	2768	2498	2392	3223	3011	1687	8834
+2024-11-11 18:27:15,948 [INFO] - Epoch: 20/30,          train_all_loss:2.306,
+                          train_psd_loss:0.834, train_reg_loss:0.422, train_con_loss:1.050,
+2024-11-11 18:28:03,398 [INFO] - Current: H-Score:0.766, KnownAcc:0.685, UnknownAcc:0.870
+2024-11-11 18:28:03,399 [INFO] - Best   : H-Score:0.766, KnownAcc:0.685, UnknownAcc:0.870
+2024-11-11 18:28:03,401 [INFO] - Generating offline feat_decomposation based pseudo labels...
+2024-11-11 18:28:50,778 [INFO] - Performing C_t estimation...
+2024-11-11 18:29:42,557 [INFO] - Performing C_t estimation Done!
+2024-11-11 18:29:42,715 [INFO] - PSD AVG ACC:	0.643
+2024-11-11 18:29:42,715 [INFO] - PSD PER ACC:	0.754	0.727	0.514	0.312	0.641	0.825	0.725
+2024-11-11 18:29:42,715 [INFO] - PER CLS NUM:	3646	3475	4690	10401	4691	2075	12065
+2024-11-11 18:29:42,715 [INFO] - PRE CLS NUM:	2754	2632	2635	3717	3052	3029	19918
+2024-11-11 18:29:42,715 [INFO] - PRE ACC NUM:	2749	2526	2411	3249	3006	1711	8752
+2024-11-11 18:31:34,914 [INFO] - Epoch: 21/30,          train_all_loss:2.307,
+                          train_psd_loss:0.840, train_reg_loss:0.425, train_con_loss:1.042,
+2024-11-11 18:32:22,299 [INFO] - Current: H-Score:0.766, KnownAcc:0.682, UnknownAcc:0.873
+2024-11-11 18:32:22,299 [INFO] - Best   : H-Score:0.766, KnownAcc:0.685, UnknownAcc:0.870
+2024-11-11 18:32:22,302 [INFO] - Generating offline feat_decomposation based pseudo labels...
+2024-11-11 18:33:09,180 [INFO] - PSD AVG ACC:	0.642
+2024-11-11 18:33:09,180 [INFO] - PSD PER ACC:	0.745	0.723	0.517	0.320	0.644	0.826	0.717
+2024-11-11 18:33:09,180 [INFO] - PER CLS NUM:	3646	3475	4690	10401	4691	2075	12065
+2024-11-11 18:33:09,180 [INFO] - PRE CLS NUM:	2723	2614	2638	3801	3066	2926	19739
+2024-11-11 18:33:09,180 [INFO] - PRE ACC NUM:	2718	2513	2425	3325	3021	1713	8653
+2024-11-11 18:35:02,233 [INFO] - Epoch: 22/30,          train_all_loss:2.297,
+                          train_psd_loss:0.835, train_reg_loss:0.427, train_con_loss:1.035,
+2024-11-11 18:35:50,083 [INFO] - Current: H-Score:0.763, KnownAcc:0.684, UnknownAcc:0.863
+2024-11-11 18:35:50,084 [INFO] - Best   : H-Score:0.766, KnownAcc:0.685, UnknownAcc:0.870
+2024-11-11 18:35:50,086 [INFO] - Generating offline feat_decomposation based pseudo labels...
+2024-11-11 18:36:38,130 [INFO] - PSD AVG ACC:	0.639
+2024-11-11 18:36:38,131 [INFO] - PSD PER ACC:	0.745	0.719	0.517	0.316	0.633	0.829	0.713
+2024-11-11 18:36:38,131 [INFO] - PER CLS NUM:	3646	3475	4690	10401	4691	2075	12065
+2024-11-11 18:36:38,131 [INFO] - PRE CLS NUM:	2720	2590	2636	3752	3009	2975	19789
+2024-11-11 18:36:38,132 [INFO] - PRE ACC NUM:	2715	2497	2427	3287	2969	1721	8598
+2024-11-11 18:38:30,986 [INFO] - Epoch: 23/30,          train_all_loss:2.290,
+                          train_psd_loss:0.842, train_reg_loss:0.427, train_con_loss:1.020,
+2024-11-11 18:39:18,639 [INFO] - Current: H-Score:0.759, KnownAcc:0.685, UnknownAcc:0.851
+2024-11-11 18:39:18,639 [INFO] - Best   : H-Score:0.766, KnownAcc:0.685, UnknownAcc:0.870
+2024-11-11 18:39:18,641 [INFO] - Generating offline feat_decomposation based pseudo labels...
+2024-11-11 18:40:06,434 [INFO] - PSD AVG ACC:	0.638
+2024-11-11 18:40:06,434 [INFO] - PSD PER ACC:	0.747	0.722	0.510	0.311	0.640	0.834	0.706
+2024-11-11 18:40:06,434 [INFO] - PER CLS NUM:	3646	3475	4690	10401	4691	2075	12065
+2024-11-11 18:40:06,434 [INFO] - PRE CLS NUM:	2727	2607	2578	3689	3046	2950	19738
+2024-11-11 18:40:06,435 [INFO] - PRE ACC NUM:	2722	2508	2390	3230	3002	1730	8518
+2024-11-11 18:41:59,630 [INFO] - Epoch: 24/30,          train_all_loss:2.292,
+                          train_psd_loss:0.849, train_reg_loss:0.430, train_con_loss:1.013,
+2024-11-11 18:42:47,177 [INFO] - Current: H-Score:0.752, KnownAcc:0.690, UnknownAcc:0.827
+2024-11-11 18:42:47,177 [INFO] - Best   : H-Score:0.766, KnownAcc:0.685, UnknownAcc:0.870
+2024-11-11 18:42:47,179 [INFO] - Generating offline feat_decomposation based pseudo labels...
+2024-11-11 18:43:35,039 [INFO] - PSD AVG ACC:	0.639
+2024-11-11 18:43:35,040 [INFO] - PSD PER ACC:	0.743	0.723	0.513	0.304	0.642	0.838	0.707
+2024-11-11 18:43:35,040 [INFO] - PER CLS NUM:	3646	3475	4690	10401	4691	2075	12065
+2024-11-11 18:43:35,040 [INFO] - PRE CLS NUM:	2714	2617	2597	3612	3059	2963	19835
+2024-11-11 18:43:35,040 [INFO] - PRE ACC NUM:	2709	2514	2406	3163	3013	1738	8526
+2024-11-11 18:45:28,130 [INFO] - Epoch: 25/30,          train_all_loss:2.302,
+                          train_psd_loss:0.866, train_reg_loss:0.433, train_con_loss:1.003,
+2024-11-11 18:46:15,127 [INFO] - Current: H-Score:0.739, KnownAcc:0.686, UnknownAcc:0.802
+2024-11-11 18:46:15,127 [INFO] - Best   : H-Score:0.766, KnownAcc:0.685, UnknownAcc:0.870
+2024-11-11 18:46:15,130 [INFO] - Generating offline feat_decomposation based pseudo labels...
+2024-11-11 18:47:02,720 [INFO] - PSD AVG ACC:	0.635
+2024-11-11 18:47:02,721 [INFO] - PSD PER ACC:	0.741	0.724	0.505	0.304	0.632	0.839	0.702
+2024-11-11 18:47:02,721 [INFO] - PER CLS NUM:	3646	3475	4690	10401	4691	2075	12065
+2024-11-11 18:47:02,721 [INFO] - PRE CLS NUM:	2705	2619	2542	3613	3009	2915	19881
+2024-11-11 18:47:02,721 [INFO] - PRE ACC NUM:	2700	2515	2368	3161	2966	1740	8469
+2024-11-11 18:48:56,516 [INFO] - Epoch: 26/30,          train_all_loss:2.298,
+                          train_psd_loss:0.873, train_reg_loss:0.434, train_con_loss:0.992,
+2024-11-11 18:49:43,820 [INFO] - Current: H-Score:0.732, KnownAcc:0.689, UnknownAcc:0.780
+2024-11-11 18:49:43,821 [INFO] - Best   : H-Score:0.766, KnownAcc:0.685, UnknownAcc:0.870
+2024-11-11 18:49:43,823 [INFO] - Generating offline feat_decomposation based pseudo labels...
+2024-11-11 18:50:31,630 [INFO] - PSD AVG ACC:	0.634
+2024-11-11 18:50:31,630 [INFO] - PSD PER ACC:	0.743	0.708	0.507	0.314	0.635	0.836	0.699
+2024-11-11 18:50:31,630 [INFO] - PER CLS NUM:	3646	3475	4690	10401	4691	2075	12065
+2024-11-11 18:50:31,630 [INFO] - PRE CLS NUM:	2713	2548	2541	3717	3022	2838	19785
+2024-11-11 18:50:31,630 [INFO] - PRE ACC NUM:	2708	2460	2376	3261	2981	1734	8431
+2024-11-11 18:52:24,817 [INFO] - Epoch: 27/30,          train_all_loss:2.297,
+                          train_psd_loss:0.874, train_reg_loss:0.437, train_con_loss:0.985,
+2024-11-11 18:53:12,034 [INFO] - Current: H-Score:0.726, KnownAcc:0.690, UnknownAcc:0.767
+2024-11-11 18:53:12,035 [INFO] - Best   : H-Score:0.766, KnownAcc:0.685, UnknownAcc:0.870
+2024-11-11 18:53:12,037 [INFO] - Generating offline feat_decomposation based pseudo labels...
+2024-11-11 18:54:00,183 [INFO] - PSD AVG ACC:	0.636
+2024-11-11 18:54:00,184 [INFO] - PSD PER ACC:	0.755	0.709	0.524	0.304	0.640	0.827	0.695
+2024-11-11 18:54:00,184 [INFO] - PER CLS NUM:	3646	3475	4690	10401	4691	2075	12065
+2024-11-11 18:54:00,184 [INFO] - PRE CLS NUM:	2758	2549	2642	3582	3043	2702	19800
+2024-11-11 18:54:00,184 [INFO] - PRE ACC NUM:	2752	2463	2458	3161	3000	1716	8384
+2024-11-11 18:55:53,500 [INFO] - Epoch: 28/30,          train_all_loss:2.304,
+                          train_psd_loss:0.883, train_reg_loss:0.440, train_con_loss:0.982,
+2024-11-11 18:56:42,104 [INFO] - Current: H-Score:0.716, KnownAcc:0.694, UnknownAcc:0.741
+2024-11-11 18:56:42,104 [INFO] - Best   : H-Score:0.766, KnownAcc:0.685, UnknownAcc:0.870
+2024-11-11 18:56:42,106 [INFO] - Generating offline feat_decomposation based pseudo labels...
+2024-11-11 18:57:30,049 [INFO] - PSD AVG ACC:	0.635
+2024-11-11 18:57:30,049 [INFO] - PSD PER ACC:	0.761	0.707	0.519	0.305	0.620	0.837	0.693
+2024-11-11 18:57:30,049 [INFO] - PER CLS NUM:	3646	3475	4690	10401	4691	2075	12065
+2024-11-11 18:57:30,049 [INFO] - PRE CLS NUM:	2780	2547	2602	3612	2944	2801	19787
+2024-11-11 18:57:30,049 [INFO] - PRE ACC NUM:	2774	2458	2432	3177	2908	1737	8356
+2024-11-11 18:59:22,868 [INFO] - Epoch: 29/30,          train_all_loss:2.306,
+                          train_psd_loss:0.894, train_reg_loss:0.442, train_con_loss:0.970,
+2024-11-11 19:00:11,160 [INFO] - Current: H-Score:0.710, KnownAcc:0.687, UnknownAcc:0.733
+2024-11-11 19:00:11,160 [INFO] - Best   : H-Score:0.766, KnownAcc:0.685, UnknownAcc:0.870
+2024-11-11 19:00:11,163 [INFO] - Generating offline feat_decomposation based pseudo labels...
+2024-11-11 19:01:00,183 [INFO] - PSD AVG ACC:	0.630
+2024-11-11 19:01:00,183 [INFO] - PSD PER ACC:	0.742	0.701	0.505	0.302	0.640	0.833	0.688
+2024-11-11 19:01:00,183 [INFO] - PER CLS NUM:	3646	3475	4690	10401	4691	2075	12065
+2024-11-11 19:01:00,183 [INFO] - PRE CLS NUM:	2712	2520	2515	3547	3047	2704	19905
+2024-11-11 19:01:00,183 [INFO] - PRE ACC NUM:	2707	2437	2370	3137	3000	1728	8295
+2024-11-11 19:02:53,956 [INFO] - Epoch: 30/30,          train_all_loss:2.298,
+                          train_psd_loss:0.889, train_reg_loss:0.440, train_con_loss:0.969,
+2024-11-11 19:03:42,685 [INFO] - Current: H-Score:0.709, KnownAcc:0.690, UnknownAcc:0.730
+2024-11-11 19:03:42,685 [INFO] - Best   : H-Score:0.766, KnownAcc:0.685, UnknownAcc:0.870
